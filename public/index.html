@@ -845,23 +845,27 @@
   <script src="js/custom.js"></script>
   <script type="module">
     // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyCGIce14dC-aaLyCA1UmH7cJ21LNNjZQBI",
-      authDomain: "zabi-web.firebaseapp.com",
-      projectId: "zabi-web",
-      storageBucket: "zabi-web.appspot.com",
-      messagingSenderId: "676574153747",
-      appId: "1:676574153747:web:7578bb4c9081e02691c3e6"
+        apiKey: "AIzaSyCWMmYPUEB5IYGqkeIpWpDkKaNB986Zwbg",
+        authDomain: "pinkstone-4e0d2.firebaseapp.com",
+        projectId: "pinkstone-4e0d2",
+        storageBucket: "pinkstone-4e0d2.appspot.com",
+        messagingSenderId: "448918560718",
+        appId: "1:448918560718:web:fdfc7db074429d8176959f",
+        measurementId: "G-2JGL3EHNXC"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-  </script>
+    const analytics = getAnalytics(app);
+</script>
 </body>
 
 </html>
